@@ -29,10 +29,10 @@ num7.addEventListener('click', () => {let newNum = 7; calcDisplay(newNum); retur
 num8.addEventListener('click', () => {let newNum = 8; calcDisplay(newNum); return 8;});
 num9.addEventListener('click', () => {let newNum = 9; calcDisplay(newNum); return 9;});
 num0.addEventListener('click', () => {let newNum = 0; calcDisplay(newNum); return 0;});
-addOperator.addEventListener('click', () => {let currOperator = "+"; calcDisplay(" " + currOperator + " ")});
-subOperator.addEventListener('click', () => {let currOperator = "-"; calcDisplay(" " + currOperator + " ")});
-mulOperator.addEventListener('click', () => {let currOperator = "*"; calcDisplay(" " + currOperator + " ")});
-divOperator.addEventListener('click', () => {let currOperator = "/"; calcDisplay(" " + currOperator + " ")});
+addOperator.addEventListener('click', () => {return currOperator = "+";});
+subOperator.addEventListener('click', () => {return currOperator = "-";});
+mulOperator.addEventListener('click', () => {return currOperator = "*";});
+divOperator.addEventListener('click', () => {return currOperator = "/";});
 clear.addEventListener('click', () => {let clearMe = ""; clearDisplay(clearMe);});
 submit.addEventListener('click', () => {operate();});
 
